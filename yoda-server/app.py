@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return '<h1>Yoda Server</h1> This is my root path.'
 
 
 @app.route('/<path:path>')
