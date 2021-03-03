@@ -13,3 +13,7 @@ def hello_world():
 def show_user_profile(path):
     # show the user profile for that user
     return '<h1>Yoda Server</h1> The path you requested is: <br>%s' % escape(path)
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=False)
