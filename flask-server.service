@@ -1,0 +1,11 @@
+[Unit]
+Description=Yoda Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/ec2-user/aws-reverse-proxy-test/yoda-server/venv/bin/python /home/ec2-user/aws-reverse-proxy-test/yoda-server/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
